@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-utils": [
+        "dist/ng-utils"
+      ],
+      "ng-utils/*": [
+        "dist/ng-utils/*"
+      ]
+    }
   }
 }
