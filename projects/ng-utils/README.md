@@ -56,7 +56,9 @@ Parameter: number = string length.
 Usage: </br>
 `string | truncate: 450`
 
-## Http Client Base
+## Components
+
+### Http Client Base
 
 Abstract class for HttpClient
 Generic HttpClient service
@@ -76,3 +78,9 @@ export class AppService extends HttpClientBase {
     }
 }
 ```
+
+## Components
+
+### Round Progress
+
+Rounded animated progress bar
