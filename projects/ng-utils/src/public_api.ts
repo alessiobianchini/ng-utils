@@ -10,5 +10,4 @@ export * from './lib/directives/only-number.directive';
 export * from './lib/pipes/order-by.pipe';
 export * from './lib/pipes/text-truncate.pipe';
 export * from './lib/pipes/enum-to-array.pipe';
-
-
+export * from './lib/services/http-client-base.service';

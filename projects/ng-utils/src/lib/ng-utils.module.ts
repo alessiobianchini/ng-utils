@@ -4,10 +4,10 @@ import { OrderByPipe } from './pipes/order-by.pipe';
 import { TextTruncatePipe } from './pipes/text-truncate.pipe';
 import { EnumToArrayPipe } from './pipes/enum-to-array.pipe';
 import { MomentPipe } from './pipes/moment.pipe';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
-  imports: [
-  ],
+  imports: [HttpClient],
   declarations: [
     OnlyNumber,
     OrderByPipe,

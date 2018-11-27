@@ -55,3 +55,24 @@ Parameter: number = string length.
 
 Usage: </br>
 `string | truncate: 450`
+
+## Http Client Base
+
+Abstract class for HttpClient
+Generic HttpClient service
+
+Usage: </br>
+
+```typescript
+@Injectable()
+export class AppService extends HttpClientBase {
+    constructor(
+        private http: HttpClient) {
+        super(http, environment.apiBaseUrl);
+    }
+
+    getExamples(): Observable<any[]> {
+        return this.invoke('GET', 'api/exaples', {});
+    }
+}
+```
