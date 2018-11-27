@@ -1,27 +1,57 @@
-# Workspace
+#Angular directives and pipes pack
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+##Installation
 
-## Development server
+`npm i ng-utils-pack`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+and </br>
 
-## Code scaffolding
+`import { NgUtilsModule } from 'ng-utils-pack'`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+or </br>
 
-## Build
+`import { SingleElement } from 'ng-utils-pack'`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+##Directives
 
-## Running unit tests
+###OnlyNumber 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Numerical formatter for input.
+Allowed: 
+numbers (numpad to), space, '+', Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X, home, end, left and right.
 
-## Running end-to-end tests
+Usage: </br>
+`[OnlyNumber]="true"`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+##Pipes
 
-## Further help
+###EnumToArrayPipe
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Convert enumerator to array.
+
+Usage: </br>
+`*ngFor="let element of elements | enumToArray"`
+
+###MomentPipe
+
+Return the date in the format provided.
+Parameters: string = date format.
+
+Usage: </br>
+`string | moment: 'DD/MM/YYYY'`
+
+###OrderByPipe
+
+Sort array in *ngFor.
+Parameters: string[] = properties to sort.
+
+Usage: </br>
+`*ngFor="let element of elements | orderBy: ['element.firstProperty', 'element.secondProperty']"`
+
+###TextTruncatePipe
+
+Return truncated string.
+Parameter: number = string length.
+
+Usage: </br>
+`string | truncate: 450`
