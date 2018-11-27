@@ -1,0 +1,22 @@
+.progress-wrapper {
+    position: relative;
+    /* margin: 20px auto; */
+    font-size: 40px;
+    text-align: center;
+}
+
+.current {
+    position: absolute;
+    color: #0E2759;
+    font-weight: 100;
+    line-height: 1;
+    top: 50%;
+    bottom: auto;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-family: 'Source Sans Pro semibold';
+}
+
+app-round-progress, round-progress {
+    margin: auto;
+}
