@@ -1,6 +1,6 @@
-#Angular directives and pipes pack
+# Angular directives and pipes pack
 
-##Installation
+## Installation
 
 `npm i ng-utils-pack`
 
@@ -12,9 +12,9 @@ or </br>
 
 `import { SingleElement } from 'ng-utils-pack'`
 
-##Directives
+## Directives
 
-###OnlyNumber 
+### OnlyNumber 
 
 Numerical formatter for input.
 Allowed: 
@@ -23,16 +23,16 @@ numbers (numpad to), space, '+', Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X, home, end, left
 Usage: </br>
 `[OnlyNumber]="true"`
 
-##Pipes
+## Pipes
 
-###EnumToArrayPipe
+### EnumToArrayPipe
 
 Convert enumerator to array.
 
 Usage: </br>
 `*ngFor="let element of elements | enumToArray"`
 
-###MomentPipe
+### MomentPipe
 
 Return the date in the format provided.
 Parameters: string = date format.
@@ -40,7 +40,7 @@ Parameters: string = date format.
 Usage: </br>
 `string | moment: 'DD/MM/YYYY'`
 
-###OrderByPipe
+### OrderByPipe
 
 Sort array in *ngFor.
 Parameters: string[] = properties to sort.
@@ -48,7 +48,7 @@ Parameters: string[] = properties to sort.
 Usage: </br>
 `*ngFor="let element of elements | orderBy: ['element.firstProperty', 'element.secondProperty']"`
 
-###TextTruncatePipe
+### TextTruncatePipe
 
 Return truncated string.
 Parameter: number = string length.
