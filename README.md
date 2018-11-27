@@ -1,4 +1,4 @@
-# Angular directives and pipes pack
+# Angular directives, pipes, services and components pack
 
 ## Installation
 
@@ -56,7 +56,7 @@ Parameter: number = string length.
 Usage: </br>
 `string | truncate: 450`
 
-## Components
+## Services
 
 ### Http Client Base
 
