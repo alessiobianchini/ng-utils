@@ -76,3 +76,9 @@ export class AppService extends HttpClientBase {
     }
 }
 ```
+
+## Components
+
+### Round Progress
+
+Rounded animated progress bar
